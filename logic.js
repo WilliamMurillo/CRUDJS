@@ -215,9 +215,9 @@ try{
     comprobar = false;
     console.log(cedula);
 
-    nombre = $("#nomPersonUpd").val("");
-    apellido = $("#apePersonUpd").val("");
-    profesion = $("#proPersonUpd").val(""); 
+   $("#nomPersonUpd").val("");
+   $("#apePersonUpd").val("");
+   $("#proPersonUpd").val(""); 
 
     for(var i=0; i<personas.datos.length;i++ ){
 
