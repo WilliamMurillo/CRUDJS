@@ -297,7 +297,6 @@ $(function(){
 });
 
 
-
 /*
 localStorage.setItem("personas",JSON.stringify(user));
 
