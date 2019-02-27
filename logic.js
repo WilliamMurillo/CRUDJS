@@ -134,12 +134,14 @@ function fnDeletePerson(){
           alert("El registro con cédula: " + cedula + " a sido eliminado");
           
           localStorage.setItem("usuario", JSON.stringify(personas));
+
+          
         }
 
         if(personas.datos.length -1 == i && comprobar == false){
 
           alert("Error: No existe un registro de una personas con este número de cédula");
-
+          break;
         }
     }  
 
