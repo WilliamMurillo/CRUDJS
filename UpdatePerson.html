@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="logic.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Actualizar persona</title>
+</head>
+<body>
+   
+        <h1>CRUD: Aquí se actualizan los datos de las personas en el localStore</h1>
+        
+        <h3>Ingrese el número de cédula para comprobar que la persona existe en los registros</h3>
+        Cédula: <br> <input maxlength="10" id="cedPersonUpd"> <br> <br>
+        <button onclick="return fnCheckCed()">Comprobar persona</button> <br> <br>
+
+        Cédula: <br> <input maxlength="10" id="cedPersonUpd2"> <br> <br>
+        Nombre: <br> <input type="text" id="nomPersonUpd"> <br> <br>
+        Apellido: <br> <input type="text" id="apePersonUpd"> <br> <br>
+        Profesión: <br> <input type="text" id="proPersonUpd"> <br> <br>
+       
+       <button onclick="return fnUpdatePerson()">Actualizar persona</button>
+
+        
+</body>
+</html>
