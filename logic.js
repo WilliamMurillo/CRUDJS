@@ -180,16 +180,18 @@ function fnInsertPerson(){
       comprobar = true;
       }
 
-     if(comprobar == false && usuario.datos.length-1 ==i){
-     personas.datos.splice(usuario.datos.length,0,{
+     if(comprobar == false && usuario.datos.length-1 == i){
+     usuario.datos.splice(usuario.datos.length,0,{
       cedula: cedula,
       nombre: nombre,
       apellido: apellido,
       profesion: profesion
         
        });
-       localStorage.setItem("usuario", JSON.stringify(personas));
+       localStorage.setItem("usuario", JSON.stringify(usuario));
        alert("Se ha creado el nuevo registro de forma exitosa");
+
+       break;
       }
 }
 
